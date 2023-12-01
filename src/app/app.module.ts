@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
+<<<<<<< HEAD
+
+=======
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -44,3 +45,4 @@ import { AreaLogadaComponent } from './components/area-logada/area-logada.compon
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+>>>>>>> 97a4f4686db4b179cc53e2a163b7f1aee69e96ec
