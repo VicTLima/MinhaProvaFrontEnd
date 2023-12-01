@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
     <h2>Atividade07</h2>
     
     <h2>Atividade08</h2>
-    
+    <app-dados-alunos></app-dados-alunos>
   `,
   styles: []
 })

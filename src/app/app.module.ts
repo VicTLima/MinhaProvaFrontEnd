@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ContadorComponentComponent } from './components/contador-component/contador-component.component';
 import { ListItensComponent } from './components/list-itens/list-itens.component';
@@ -32,7 +33,8 @@ import { ComponenteFilhoComponent } from './components/componente-filho/componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
