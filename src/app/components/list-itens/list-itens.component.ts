@@ -1,12 +1,43 @@
 import { Component } from '@angular/core';
 
+interface InterfaceProduto{
+  id:string,
+  nome:string,
+  serie:string,
+  valor:string
+}
+
 @Component({
   selector: 'app-list-itens',
   templateUrl: './list-itens.component.html',
   styleUrls: ['./list-itens.component.css']
 })
 export class ListItensComponent {
-  produtos = [
+  
+  public produtos:Array<InterfaceProduto>;
+  public cadastro:boolean; 
+  public deletar:boolean; 
+
+  constructor() { this.cadastro = false;this.deletar = false;this.produtos = new Array}
+
+  ngOnInit() {}
+
+  add():void{
+    if(this.cadastro!=false){
+      this.cadastro = false;
+    }else{
+      this.cadastro = true;
+    }
+  }
+  delete():void{
+    if(this.deletar!=false){
+      this.deletar = false;
+    }else{
+      this.deletar = true;
+    }
+  }
+
+/*  produtos = [
     {
       id:1,
       nome:'Smartphone',
@@ -50,4 +81,6 @@ export class ListItensComponent {
       valor: '13.000R$'
     }
   ]
+  this.produtos.push({...this.produtos})
+  */  
 }

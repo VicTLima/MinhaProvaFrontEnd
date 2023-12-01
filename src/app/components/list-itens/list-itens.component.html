@@ -1,4 +1,4 @@
-
+<!--
 <ul>
     <li *ngFor="let obj of produtos;let i=index">
         <p>Id: {{obj.id}}</p>
@@ -7,3 +7,18 @@
         <p>Valor: {{obj.valor}}</p>
     </li>
 </ul>
+-->
+<h1>O que você deseja fazer?:</h1>
+<Button (click) = 'add()'>Adicionar</Button>
+<Button (click) = 'delete()'>Remover</Button>
+<app-adicionarproduto *ngIf="cadastro"></app-adicionarproduto>
+<app-deletarproduto *ngIf="deletar"></app-deletarproduto>
+
+<ul>
+    <li *ngFor="let obj of produtos;let i=index">
+        <p>{{obj.id}}</p>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
+
