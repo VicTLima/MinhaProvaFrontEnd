@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
     <h2>Atividade06</h2>
     <app-componente-pai></app-componente-pai>
     <h2>Atividade07</h2>
-    
+    <app-form-login></app-form-login>
     <h2>Atividade08</h2>
     <app-dados-alunos></app-dados-alunos>
   `,

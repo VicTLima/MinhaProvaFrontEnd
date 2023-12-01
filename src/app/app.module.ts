@@ -15,6 +15,8 @@ import { DeletarprodutoComponent } from './components/deletarproduto/deletarprod
 import { ListComponent } from './components/list/list.component';
 import { ComponentePaiComponent } from './components/componente-pai/componente-pai.component';
 import { ComponenteFilhoComponent } from './components/componente-filho/componente-filho.component';
+import { FormLoginComponent } from './components/form-login/form-login.component';
+import { AreaLogadaComponent } from './components/area-logada/area-logada.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ComponenteFilhoComponent } from './components/componente-filho/componen
     DeletarprodutoComponent,
     ListComponent,
     ComponentePaiComponent,
-    ComponenteFilhoComponent
+    ComponenteFilhoComponent,
+    FormLoginComponent,
+    AreaLogadaComponent
   ],
   imports: [
     BrowserModule,
