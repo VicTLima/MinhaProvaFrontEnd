@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
     <h2>Atividade04</h2>
 
     <h2>Atividade05</h2>
-
+    <app-controle-acesso></app-controle-acesso>
     <h2>Atividade06</h2>
     <app-componente-pai></app-componente-pai>
     <h2>Atividade07</h2>

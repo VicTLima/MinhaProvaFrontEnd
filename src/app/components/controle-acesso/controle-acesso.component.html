@@ -1,1 +1,28 @@
-<p>controle-acesso works!</p>
+<body>
+    <div ng-hide="someVariable" ng-click="someVariable =! someVariable">
+        <button (click)="showMessage1()">ADMINISTRADOR</button>
+        
+    
+        <button (click)="showMessage2()">COLABORADOR</button>
+        
+    
+        <button (click)="showMessage3()">USUÁRIO</button>
+    </div>
+
+
+    <div ng-show="someVariable">
+        <p *ngIf="show1">Você tem permissão de administrador</p>
+        <p *ngIf="show1">Escolha o que você quer fazer:</p>
+        <button *ngIf="show1">Cadastrar usuário</button>
+        <button *ngIf="show1">Excluir usuário</button>
+        <button *ngIf="show1">Editar usuário</button>
+
+        <p *ngIf="show2">Você tem permissão de colaborador.</p>
+        <p *ngIf="show2">Escolha o que você quer fazer:</p>
+        <button *ngIf="show2">Cadastrar usuário</button>
+
+        <p *ngIf="show3">Você tem permissão de usuário.</p>
+    </div>
+
+    
+</body>
