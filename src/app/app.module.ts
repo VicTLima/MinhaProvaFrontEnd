@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
+<<<<<<< HEAD
+
+=======
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ContadorComponentComponent } from './components/contador-component/contador-component.component';
 import { ListItensComponent } from './components/list-itens/list-itens.component';
@@ -14,6 +16,8 @@ import { DeletarprodutoComponent } from './components/deletarproduto/deletarprod
 import { ListComponent } from './components/list/list.component';
 import { ComponentePaiComponent } from './components/componente-pai/componente-pai.component';
 import { ComponenteFilhoComponent } from './components/componente-filho/componente-filho.component';
+import { FormLoginComponent } from './components/form-login/form-login.component';
+import { AreaLogadaComponent } from './components/area-logada/area-logada.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +31,18 @@ import { ComponenteFilhoComponent } from './components/componente-filho/componen
     DeletarprodutoComponent,
     ListComponent,
     ComponentePaiComponent,
-    ComponenteFilhoComponent
+    ComponenteFilhoComponent,
+    FormLoginComponent,
+    AreaLogadaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+>>>>>>> 97a4f4686db4b179cc53e2a163b7f1aee69e96ec
