@@ -11,6 +11,9 @@ import { ControleAcessoComponent } from './components/controle-acesso/controle-a
 import { DadosAlunosComponent } from './components/dados-alunos/dados-alunos.component';
 import { AdicionarprodutoComponent } from './components/adicionarproduto/adicionarproduto.component';
 import { DeletarprodutoComponent } from './components/deletarproduto/deletarproduto.component';
+import { ListComponent } from './components/list/list.component';
+import { ComponentePaiComponent } from './components/componente-pai/componente-pai.component';
+import { ComponenteFilhoComponent } from './components/componente-filho/componente-filho.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { DeletarprodutoComponent } from './components/deletarproduto/deletarprod
     ControleAcessoComponent,
     DadosAlunosComponent,
     AdicionarprodutoComponent,
-    DeletarprodutoComponent
+    DeletarprodutoComponent,
+    ListComponent,
+    ComponentePaiComponent,
+    ComponenteFilhoComponent
   ],
   imports: [
     BrowserModule,

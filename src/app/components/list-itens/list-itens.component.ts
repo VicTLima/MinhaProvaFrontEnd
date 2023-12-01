@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 interface InterfaceProduto{
   id:string,
@@ -13,27 +13,34 @@ interface InterfaceProduto{
   styleUrls: ['./list-itens.component.css']
 })
 export class ListItensComponent {
-  
-  public produtos:Array<InterfaceProduto>;
+  public produtos:InterfaceProduto[];
   public cadastro:boolean; 
   public deletar:boolean; 
 
-  constructor() { this.cadastro = false;this.deletar = false;this.produtos = new Array}
+  constructor() { this.cadastro = false;this.deletar = false;this.produtos = []}
 
   ngOnInit() {}
 
+  getAll():Array<InterfaceProduto>
+  {
+    return this.produtos;
+  }
   add():void{
-    if(this.cadastro!=false){
-      this.cadastro = false;
-    }else{
-      this.cadastro = true;
+    if(this.deletar == false){
+      if(this.cadastro!=false){
+        this.cadastro = false;
+      }else{
+        this.cadastro = true;
+      }
     }
   }
   delete():void{
-    if(this.deletar!=false){
-      this.deletar = false;
-    }else{
-      this.deletar = true;
+    if(this.cadastro == false){
+      if(this.deletar!=false){
+        this.deletar = false;
+      }else{
+        this.deletar = true;
+      }
     }
   }
 

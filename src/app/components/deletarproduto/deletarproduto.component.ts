@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ListItensComponent } from '../list-itens/list-itens.component';
+
+interface InterfaceProduto{
+  id:string,
+  nome:string,
+  serie:string,
+  valor:string
+}
 
 @Component({
   selector: 'app-deletarproduto',
@@ -8,13 +15,16 @@ import { ListItensComponent } from '../list-itens/list-itens.component';
 })
 export class DeletarprodutoComponent {
   public id:string;
-  public listItens: ListItensComponent;
+  @Input() listItens: InterfaceProduto[];
 
-  constructor() { this.id = "";this.listItens = new ListItensComponent;}
+  constructor() { this.id = "";this.listItens = [];}
 
   ngOnInit() {}
   excluir():void{
-    this.listItens.produtos.splice(1, 1);
-    console.log(this.listItens.produtos)
+    this.listItens.forEach((value,index)=>{
+      if(this.id === value.id){
+        this.listItens.splice(index, 1);
+      }
+    })
   }
 }
